@@ -2,7 +2,6 @@ import React from "react";
 import "./SearchPage.css";
 import { useStateValue } from "../StateProvider";
 import useGoogleSearch from "../useGoogleSearch";
-import Response from "../response";
 import { Link } from "react-router-dom";
 import Search from "../components/Search";
 import SearchIcon from "@material-ui/icons/Search";
@@ -82,6 +81,7 @@ function SearchPage() {
                     <img
                       className="searchPage__resultImage"
                       src={item.pagemap?.cse_image[0]?.src}
+                      alt="pic"
                     />
                   )}
                 {item.displayLink} ▽
